@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
 
 public class ThirdPlayerView : MonoBehaviour
 {
 
-
+    //public Image healthBar;
     public float turnSpeed = 4.0f;
     public GameObject target;
     public GameObject targetOrientation;
@@ -22,6 +23,7 @@ public class ThirdPlayerView : MonoBehaviour
 
     void Start()
     {
+       // healthBar.fillAmount = PlayerCollision.healthAmount;
         //rb = GetComponent<Rigidbody>();
         //rb.freezeRotation = true;
         targetDistance = Vector3.Distance(transform.position, target.transform.position);
@@ -58,6 +60,6 @@ public class ThirdPlayerView : MonoBehaviour
     void LateUpdate() {
         targetOrientation.transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y + y, 0);
 
-    }
-    */
+    }*/
+    
 }
