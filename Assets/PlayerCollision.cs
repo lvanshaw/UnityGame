@@ -5,7 +5,7 @@ public class PlayerCollision : MonoBehaviour
 {
     //public PalayerM movement;
 
-    public Image healthBar;
+    public  Image healthBar;
     //Player p = new Player();
     public static float healthAmount = 100f;
 

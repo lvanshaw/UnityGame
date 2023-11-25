@@ -6,7 +6,7 @@ using static System.Net.Mime.MediaTypeNames;
 public class ThirdPlayerView : MonoBehaviour
 {
 
-    //public Image healthBar;
+    
     public float turnSpeed = 4.0f;
     public GameObject target;
     public GameObject targetOrientation;
@@ -20,10 +20,15 @@ public class ThirdPlayerView : MonoBehaviour
     public float moveSpeed = 10f;
 
     //public Rigidbody rb;
+    //public Image health;
 
+    void Awake() {
+        //float value = PlayerCollision.healthAmount;
+       
+    }
     void Start()
     {
-       // healthBar.fillAmount = PlayerCollision.healthAmount;
+        //health.fillAmount = 50f;
         //rb = GetComponent<Rigidbody>();
         //rb.freezeRotation = true;
         targetDistance = Vector3.Distance(transform.position, target.transform.position);
