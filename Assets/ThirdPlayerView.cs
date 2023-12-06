@@ -22,6 +22,8 @@ public class ThirdPlayerView : MonoBehaviour
     //public Rigidbody rb;
     //public Image health;
 
+ 
+
     void Awake() {
         //float value = PlayerCollision.healthAmount;
        
